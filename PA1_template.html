@@ -86,7 +86,7 @@ ggplot(data=totdf, aes(totdf$tot)) +
 <p>What are the mean and median number of steps per day?</p>
 <pre class="r"><code>mymean = mean(totdf$tot, na.rm=TRUE)
 mymedian = median(totdf$tot, na.rm=TRUE)</code></pre>
-<p>The mean number of steps per day is 1.076618910^{4} and the median steps per day is 10765.</p>
+<p>The mean number of steps per day is 10766.19 and the median steps per day is 10765.</p>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">
 <h2>What is the average daily activity pattern?</h2>
@@ -123,7 +123,7 @@ ggplot(data=totimp, aes(tot)) +
 <p>What are the mean and median number of steps per day?</p>
 <pre class="r"><code>newmean = mean(totimp$tot)
 newmedian = median(totimp$tot)</code></pre>
-<p>The mean number of steps per day from the imputed dataset is 1.076618910^{4} and the median is 1.076618910^{4}. For comparison, ignoring NAs in the original data, the mean was 1.076618910^{4} and the median was 10765. Imputing the values from the averages does not make big differences in these numbers nor in the histogram of total steps.</p>
+<p>The mean number of steps per day from the imputed dataset is 10766.19 and the median is 10766.19. For comparison, ignoring NAs in the original data, the mean was 10766.19 and the median was 10765. Imputing the values from the averages does not make big differences in these numbers, and the histogram is affected only in bins near the mean/median.</p>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>

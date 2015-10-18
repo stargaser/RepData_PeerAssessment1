@@ -37,7 +37,7 @@ What are the mean and median number of steps per day?
 mymean = mean(totdf$tot, na.rm=TRUE)
 mymedian = median(totdf$tot, na.rm=TRUE)
 ```
-The mean number of steps per day is 1.0766189\times 10^{4} and the median steps per day is 10765.
+The mean number of steps per day is 10766.19 and the median steps per day is 10765.
 
 ## What is the average daily activity pattern?
 
@@ -99,10 +99,10 @@ newmean = mean(totimp$tot)
 newmedian = median(totimp$tot)
 ```
 
-The mean number of steps per day from the imputed dataset is 1.0766189\times 10^{4} and the median
-is 1.0766189\times 10^{4}. For comparison, ignoring NAs in the original data, the mean was
-1.0766189\times 10^{4} and the median was 10765. Imputing the values from the averages
-does not make big differences in these numbers nor in the histogram of total steps.
+The mean number of steps per day from the imputed dataset is 10766.19 and the median
+is 10766.19. For comparison, ignoring NAs in the original data, the mean was
+10766.19 and the median was 10765. Imputing the values from the averages
+does not make big differences in these numbers, and the histogram is affected only in bins near the mean/median. 
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
